@@ -50,6 +50,8 @@ sources:
     - rtl/cv32e40p_popcnt.sv
     - rtl/cv32e40p_ff_one.sv
     - rtl/cv32e40p_sleep_unit.sv
+    - rtl/cv32e40p_cumulative.sv
+    - rtl/cv32e40p_max.sv
     # Different register file implementations. By default, use the latch based
     # register file (unless we target verilator or FPGAs).
     - target: all(any(all(not(verilator), not(fpga)), cv32e40p_use_latch_regfile), not(cv32e40p_use_ff_regfile))
